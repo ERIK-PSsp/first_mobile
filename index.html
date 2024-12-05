@@ -4,166 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mobile_first</title>
-    <link rel="shortcut icon" href="./assets/homeicon.png.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/stylemobile2.css">
+    <title>login_tela_mq</title>
+
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/styles_login.css">
 
 </head>
 
-
-<body onresize="identificaTamanho()">
-    <header>
-        <h1>Site de Testes</h1>
-
-    </header>
-   
-    <span id="burger" class="material-symbols-outlined" onclick="clickOpcoes()">
-        menu
-    </span>
-  
-    <menu id="itens">
-        <ul>
-            <li><a href="#"> Mobile</a></li>
-            <li><a href="#"> Tablet</a></li>
-            <li><a href="#">smart_tv</a></li>
-            <li><a href="#">desktop</a></li>
-        </ul>
-    </menu>
-
+<body>
     <main>
-        <img src="./assets/phoneicon.png" alt="teste com celular" id="mobile">
+        <section id="login">
+            <div id="imagem">
 
-        <img src="./assets/tableticon.png" alt="teste com celular" id="tablet">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente grande guerreiro. Dê seu passe para adentrar novamente no mundo de aventuras.</p>
 
-        <img src="./assets/icon-print.png" alt="versão impressora" id="print">
+                <!-- <form action="../assets/php/login.php" method="post" autocomplete="on"> -->
 
-        <img src="./assets/computericon.png" alt="teste com desktop" id="pc">
+                <form action="./responsivo.html" method="get" autocomplete="on">
 
-        <img src="./assets/tvicon.png" alt="teste com smart tv" id="tv">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">passkey</span>
 
-        <article>
-            <h2>Testando Media Queries</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.nventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia
-                repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.nventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia
-                repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum.
-            </p>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu E-Mail aqui:" autocomplete="email"
+                            required maxlength="60">
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam itaque! Iste
-                natus excepturi molestiae
-                inventore facere nisi nesciunt ad, dolore aliquam architecto eveniet deleniti ab mollitia repellendus
-                nulla.
-                Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni consectetur incidunt
-                facere
-                cupiditate ex aperiam praesentium quam quibusdam. Quia molestiae maiores ex nulla provident, in sequi
-                eveniet
-                accusamus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci laboriosam
-                asperiores
-                pariatur. Dicta nisi accusamus adipisci corporis ducimus fuga optio totam, ullam mollitia veniam et
-                libero minus
-                qui voluptatum.
-            </p>
+                        <label for="ilogin">Login</label>
+                    </div>
 
-        </article>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">format_ink_highlighter</span>
 
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha aqui:"
+                            autocomplete="current-password" required minlength="8" maxlength="20">
+
+                        <label for="isenha">Senha:</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+
+                    <a href="esqueci.html" class="botao">
+                        Esqueceu a Senha<span class="material-symbols-outlined">mail</span>
+                    </a>
+                </form>
+            </div>
+        </section>
     </main>
-
-    <footer>
-        <p>
-            @Erik_Mobile-First_2024
-        </p>
-    </footer>
-    <script src="./assets/js/scriptmq.js"></script>
-
 </body>
 
 </html>
