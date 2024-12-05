@@ -52,7 +52,7 @@ section#login {
 
 section#login>div#imagem {
     display: block;
-    background: #ded9ad url(/assets/bonequinhodahora.png) no-repeat;
+    background: #ded9ad url(./assets/bonequinhodahora.png) no-repeat;
     background-size: cover;
     background-position: left center;
     height: 200px;
